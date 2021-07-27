@@ -24,6 +24,7 @@ int main()
         printf("\npara continuar digite algo e pressione enter:");
         cin >> resposta;
         loop = false;
+        rede_ip = "void";
         printf("\nse quiser criar um servidor digite 1");
         printf("\nse quiser criar um servidor privado digite 2\n");
         printf("\nse quiser encerrar o atendimento digite 3");
@@ -83,20 +84,35 @@ int main()
             printf("a rede ip do servidor privado foi definida como:");
             cout << rede_ip;
             loop = false;
-            printf("cadastre um nome para o seu servidor:");
+            printf("\ncadastre um nome para o seu servidor:");
             loop = false;
             cin >> identidade;
             loop = false;
             printf("o nome do servidor foi definido como:");
             cout << identidade;
             loop = true;
-            printf("cadstre uma port para o servidor:");
+            printf("\ncadstre uma porta para o servidor:");
             loop = false;
             cin >> porta;
             printf("a porta do servidor foi definida como:");
-            
+            cout << porta;
+            printf("\no servidor privado(apenas para você) foi criado pronto para uso com os seguintes dados:");
+            loop = true;
+            printf("\nrede ip:");
+            cout << rede_ip;
+            printf("\nnome do servidor:");
+            cout << identidade;
+            printf("\nporta do servidor:");
+            cout << porta;
+            loop = false;
+        }
+        if(option == 3)
+        {
+            loop = false;
+            printf("\n\n\n\n\n\n\n\nvolte sempre");
+            printf("\nscript feito por:cianofobia yt com o apoio de:hojcracker 1");
         }
         }
-        }
+    }   
     }
 }
